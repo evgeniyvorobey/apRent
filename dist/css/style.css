@@ -60,7 +60,7 @@ a {
 
 main {
 	position: relative;
-	top: 34px;
+	top: 37px;
 }
 
 .head-img {
@@ -92,6 +92,14 @@ img {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.051);
 }
 
+.aprtment-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
 .apartment-previev {
 	position: relative;
 	width: 100%;
@@ -106,7 +114,6 @@ img {
 .apartment-previev-photo {
 	position: absolute;
 	width: 300px;
-	margin-left: -5px;
 	top: 39px;
 	left: 0px;
 }
@@ -136,6 +143,31 @@ img {
 
 .button-rent-apartment:hover {
 	border: 2px solid black;
+}
+
+.comfortList {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.comfortList-type {
+	width: 200px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding-bottom: 5px;
+}
+
+.icon {
+	width: 25px;
+	height: 20px;
+	padding: 0 5px;
 }
 
 /*---------SLIDER------------*/
@@ -178,13 +210,38 @@ img {
 
 /*--------411--------*/
 
-/*--------736--------*/
+/*--------768--------*/
+
+/*--------1024--------*/
 
 /*--------1200--------*/
 
-/*--------1200--------*/
+@media (min-width: 375px) {
+
+.comfortList-type {
+	width: 180px;
+}
+
+.slider {
+	width: 375px;
+	height: 220px;
+}
+
+.sliderContainer {
+	width: 1875px;
+}
+
+.sliderContainer img {
+	width: 375px;
+}
+
+}
 
 @media (min-width: 411px) {
+
+.comfortList-type {
+	width: 200px;
+}
 
 .slider {
 	width: 411px;
@@ -201,19 +258,36 @@ img {
 
 }
 
-@media (min-width: 736px) {
+@media (min-width: 768px) {
 
 .slider {
-	width: 763px;
+	width: 768px;
 	height: 508px;
 }
 
 .sliderContainer {
-	width: 3815px;
+	width: 3840px;
 }
 
 .sliderContainer img {
-	width: 763px;
+	width: 768px;
+}
+
+.apartment-previev-photo {
+	width: 385px;
+	left: 5px;
+}
+
+.apartment-previev-map {
+	width: 397px;
+	height: 172px;
+	right: 30px;
+}
+
+.button-rent-apartment {
+	width: 50px;
+	bottom: 0px;
+	right: 60px;
 }
 
 }
@@ -231,6 +305,18 @@ img {
 
 .sliderContainer img {
 	width: 911px;
+}
+
+.apartment-previev {
+	-webkit-box-flex: 4;
+	-ms-flex-positive: 4;
+	flex-grow: 4;
+}
+
+.apartment-info {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
 }
 
 }
