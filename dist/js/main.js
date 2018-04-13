@@ -25,14 +25,14 @@ function autoSlider () {
     }, 3500);
 }
 
-document.getElementById('myform').addEventListener('submit', function (e) {
-    e.preventDefault()
+// document.getElementById('myform').addEventListener('submit', function (e) {
+//     e.preventDefault()
   
-    const inputContent = document.querySelectorAll("input, select, textarea")
+//     const inputContent = document.querySelectorAll("input, select, textarea")
     
-    for (i=0; i<inputContent.length; ++i) {
-      if (inputContent[i].name && inputContent[i].form === this) {
-        console.log(inputContent[i].name, inputContent[i].value)
-      }
-    }
-  })
+//     for (i=0; i<inputContent.length; ++i) {
+//       if (inputContent[i].name && inputContent[i].form === this) {
+//         console.log(inputContent[i].name, inputContent[i].value)
+//       }
+//     }
+//   })
