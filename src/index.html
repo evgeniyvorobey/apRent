@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/datepicker.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,500" rel="stylesheet">
     <title>ApRent</title>
@@ -309,31 +310,29 @@
             </div>
         </div>
         <div class="form">
-            <form action="index.php" method="POST" id="myform">
+            <form action="php/index.php" method="POST" id="myform">
                 <p>
-                    <label for="firstname" autocomplete="on">Name: </label>
+                    <label for="" autocomplete="on">Имя: </label>
                     <input placeholder="Name" type="text" id="firstname" name="firstname"/>
                 </p>
                 <p>
-                    <label for="tel">Tel: </label>
-                    <input placeholder="0123456789" type="tel" id="tel" name="tel" autocomplete="on" required/>
+                    <label for="" autocomplete="on">Телефон: </label>
+                    <input placeholder="0123456789" type="text" id="tel" name="phone" autocomplete="on" required/>
                 </p>
                 <p>
-                    <label for="Date">Arrival date: </label>
-                    <input type="date" name="Arrival" id="Arrival">
-                </p>
-                <p>
-                    <label for="Date">Date of Departure: </label>
-                    <input type="date" name="Departure" id="Departure">
+                    <label for="">Дата: </label>
+                    <input  type="text" name="date" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here">
                 </p>
                 <p>Select apartment:</p>
-                <select name="Apartment" id="ap" class="select_apart">
-                    <option value="First">Apartment1</option>
-                    <option value="Second">Apartment2</option>
-                    <option value="Third">Apartment3</option>
+                <select name="apartment" id="ap" class="select_apart">
+                    <option value="Не выбрано">Апартаменты</option>
+                    <option value="Сталинграда 53Б">Сталинграда 53Б</option>
+                    <option value="Сталинграда 4А">Сталинграда 4А</option>
+                    <option value="Малиновского 8">Малиновского 8</option>
                 </select>
                 <p>Select where we can contact with you:</p>
-                <select name="Mesenger" id="" class="select_apart">
+                <select name="mesenger" id="Mesenger" class="select_apart">
+                    <option value="Не выбрано">Связь</option>
                     <option value="Viber">Viber</option>
                     <option value="Telegram">Telegram</option>
                     <option value="Watsap">Watsap</option>
@@ -349,6 +348,9 @@
         
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+
 </body>
 
 </html>
