@@ -3,8 +3,8 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0;
-	font-family: 'Open Sans';
-	font-weight: 400;
+	font-family: 'IBM Plex Sans';
+	font-weight: 300;
 }
 
 /*-----HEADER-----*/
@@ -99,6 +99,12 @@ img {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	border: 4px solid rgba(135, 135, 135, 0.188235);
+	margin: 1px;
+}
+
+.apartmentTitle {
+	border-top: 4px solid rgba(135, 135, 135, 0.188235);
 }
 
 .apartment-previev {
@@ -159,7 +165,7 @@ img {
 }
 
 .comfortList-type {
-	width: 200px;
+	width: 220px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -296,6 +302,24 @@ img {
 	right: 60px;
 }
 
+.apartment-block {
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	border: 4px solid rgba(135, 135, 135, 0.188235);
+	margin: 8px 10px;
+	padding: 0 10px;
+}
+
+.apartment-info {
+	padding-bottom: 10px;
+}
+
+.apartmentTitle {
+	border-top: none;
+	border-left: 4px solid rgba(135, 135, 135, 0.188235);
+	padding-left: 10px;
+}
+
 }
 
 @media (min-width: 1024px) {
@@ -313,22 +337,27 @@ img {
 	width: 911px;
 }
 
+.apartment-previev {
+	height: 315px;
+	padding-left: 10px;
+}
+
 .apartment-previev-photo {
-	width: 426px;
+	width: 441px;
 	top: 22px;
+	padding-left: 10px;
 }
 
 .apartment-previev-map {
-	width: 497px;
-	height: 215px;
-	right: 131px;
+	width: 545px;
+	height: 235px;
+	right: 80px;
 	top: 30px;
 }
 
 .apartment-block {
 	-ms-flex-wrap: nowrap;
 	flex-wrap: nowrap;
-	border: 1px solid black;
 	margin: 15px 58px;
 }
 
