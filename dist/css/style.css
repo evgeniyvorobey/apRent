@@ -44,7 +44,8 @@ a {
 }
 
 .header-item {
-	padding: 10px 13px;
+	height: 20px;
+	padding: 10px 7px;
 	font-size: 14px;
 	margin-left: 5px;
 	border-bottom: solid 2px transparent;
@@ -60,7 +61,7 @@ a {
 
 main {
 	position: relative;
-	top: 37px;
+	top: 38px;
 }
 
 .head-img {
@@ -82,7 +83,7 @@ img {
 }
 
 .about-list p {
-	margin: 0;
+	margin: 15px 7px;
 	padding: 0;
 	font-size: 15px;
 }
@@ -115,7 +116,7 @@ img {
 }
 
 .apartment-previev-title {
-	margin: 0;
+	margin: 5px 0 0 7px;
 	font-size: 16px;
 }
 
@@ -138,7 +139,7 @@ img {
 
 .button-rent-apartment {
 	position: absolute;
-	width: 45px;
+	width: 90px;
 	border: 2px solid rgba(0, 0, 0, 0.445);
 	border-radius: 4px;
 	bottom: 10px;
@@ -151,6 +152,14 @@ img {
 
 .button-rent-apartment:hover {
 	border: 2px solid black;
+}
+
+.apartment-info {
+	padding: 5px 10px;
+}
+
+.apartmentTitle {
+	padding: 5px 10px;
 }
 
 .comfortList {
@@ -189,7 +198,7 @@ img {
 .slider {
 	position: relative;
 	width: 320px;
-	height: 213px;
+	height: 205px;
 	-webkit-box-shadow: 0px 0px 6px 0px #000000;
 	box-shadow: 0px 0px 6px 0px #000000;
 	margin: 0 auto;
@@ -216,7 +225,62 @@ img {
 	clear: both;
 }
 
+/*-----------------------------*/
+
+.form {
+	height: 400px;
+}
+
+.myform {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.myform p {
+	width: 185px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.myform p input {
+	width: 177px;
+	height: 18px;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.myform p select {
+	width: 177px;
+	height: 22px;
+	font-size: 13px;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.myform p button {
+	width: 90px;
+	height: 22px;
+	font-size: 13px;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+footer {
+	height: 70px;
+	background-color: #b1b1b1;
+}
+
 /*--------411--------*/
+
+/*--------667--------*/
 
 /*--------768--------*/
 
@@ -227,7 +291,7 @@ img {
 @media (min-width: 375px) {
 
 .comfortList-type {
-	width: 180px;
+	width: 170px;
 }
 
 .slider {
@@ -248,7 +312,7 @@ img {
 @media (min-width: 411px) {
 
 .comfortList-type {
-	width: 200px;
+	width: 185px;
 }
 
 .apartment-previev-map {
@@ -271,7 +335,25 @@ img {
 
 }
 
+@media (min-width: 667px) {
+
+.apartment-previev-photo {
+	width: 359px;
+}
+
+.apartment-previev-map {
+	width: 349px;
+	height: 176px;
+	top: 48px;
+}
+
+}
+
 @media (min-width: 768px) {
+
+.header-item {
+	padding: 10px 20px;
+}
 
 .about-list p {
 	padding: 10px;
@@ -317,7 +399,7 @@ img {
 }
 
 .button-rent-apartment {
-	width: 50px;
+	width: 90px;
 	bottom: 10px;
 	right: 60px;
 }
@@ -345,40 +427,38 @@ img {
 @media (min-width: 1024px) {
 
 .slider {
-	width: 911px;
-	height: 586px;
+	width: 1000px;
+	height: 640px;
 }
 
 .sliderContainer {
-	width: 4555px;
+	width: 5000px;
 }
 
 .sliderContainer img {
-	width: 911px;
+	width: 1000px;
 }
 
 .apartment-previev {
-	height: 315px;
+	height: 340px;
 	padding-left: 10px;
 }
 
 .apartment-previev-photo {
-	width: 441px;
+	width: 474px;
 	top: 22px;
-	padding-left: 50px;
 }
 
 .apartment-previev-map {
-	width: 515px;
-	height: 255px;
-	right: 50px;
-	top: 15px;
+	width: 530px;
+	height: 268px;
+	top: 25px;
 }
 
 .apartment-block {
 	-ms-flex-wrap: nowrap;
 	flex-wrap: nowrap;
-	margin: 15px 58px;
+	margin: 15px 10px;
 }
 
 .apartmentTitle {
@@ -390,6 +470,19 @@ img {
 @media (min-width: 1200px) {
 
 .navigation {
+	width: 1200px;
+}
+
+.slider {
+	width: 1200px;
+	height: 770px;
+}
+
+.sliderContainer {
+	width: 6000px;
+}
+
+.sliderContainer img {
 	width: 1200px;
 }
 
