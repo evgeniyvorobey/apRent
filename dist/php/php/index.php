@@ -4,7 +4,8 @@
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
 
 $name = $_POST['firstname'];
-$phone = $_POST['phone'];
+$phone = $_POST['tel'];
+$arrival = $_POST['arrival'];
 $date = $_POST['date'];
 $apartment = $_POST['apartment'];
 $mesenger = $_POST['mesenger'];
@@ -14,8 +15,10 @@ $token = "546203664:AAGBkn_eYXYqou0Xc4forruutiFjJcsY8DI";
 $chat_id = "-299903649";
 $arr = array(
     'Имя: ' => $name,
-    'Телефон: ' => $phone,
-    'Даты: ' => $date,
+    'Телефон: ' => $tel,
+    'Даты' => $date,
+    'Заезд: ' => $arrival,
+    'Выезд: ' => $departure,
     'Апартаменты' => $apartment,
     'Обратная связь: ' => $mesenger
 );
@@ -27,8 +30,8 @@ foreach($arr as $key => $value) {
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
 if ($sendToTelegram) {
-  echo '<script type="text/javascript">alert("Заявка оформлена мы в скором времени свяжемся с вами!")</script>';
+  echo "Спасибо";
 } else {
-  echo '<script type="text/javascript">alert("Что то пошло не так попробуйте еще раз.")</script>';
+  echo "Error";
 }
 ?>

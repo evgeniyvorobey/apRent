@@ -26,11 +26,11 @@ gulp.task('js',function(){
 });
 
 gulp.task('php', function(){
-	return gulp.src('./src/php/*.php')
+	return gulp.src('./src/**/*.php')
 		.pipe(gulp.dest('./dist/php'))
 		.pipe(browserSync.reload({
 			stream: true
-		}));
+			}));
 });
 
 gulp.task('css', function(){
@@ -72,7 +72,7 @@ gulp.task('watch',function(){
 	gulp.watch('./src/**/*.js',['js']);
 	gulp.watch('./src/img/**/*.+(png|jpg|gif|svg)',['img']);
 	gulp.watch('./src/fonts/**/*.*')
-	gulp.watch('./src/php/*.php',['php'])
+	gulp.watch('./src/**/*.php',['php'])
 });
 
 gulp.task('server', function() {
