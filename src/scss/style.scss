@@ -108,7 +108,7 @@ img{
 .button-rent-apartment{
   position: absolute;
   width: 90px;
-  border: 2px solid rgba(0, 0, 0, 0.445);
+  border: 2px solid rgba(0, 0, 0, 0.61);
   border-radius: 4px;
   bottom: 10px;
   right: 20px;
@@ -117,7 +117,12 @@ img{
   transition: .4s ease-in-out;
 }
 .button-rent-apartment:hover{
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0.445);
+}
+.price{
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
 }
 .apartment-info{
   padding: 5px 10px;
@@ -173,28 +178,29 @@ img{
 /*-----------------------------*/
 
 .form{
-  height: 400px;
+  height: 445px;
   border: 5px solid rgba(135, 135, 135, 0.188235);
 }
 .myform{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding-right: 5px;
 }
 .myform p{
-  width: 185px;
+  width: 250px;
   display: flex;
   flex-direction: column;
+
 }
 .myform p input{
-  width: 177px;
+  width: 250px;
   height: 18px;
   border: 1px solid black;
   border-radius: 3px;
 }
 .myform p select{
-  width: 177px;
+  width: 250px;
   height: 22px;
   font-size: 13px;
   border: 1px solid black;
@@ -211,14 +217,51 @@ img{
   background-color: #fff;
   transition: 0.15s;
 }
-.myform p button:hover{
-  border: 3px solid green;
+
+.call-button{
+  position: fixed;
+  display:  flex;
+  justify-content:  center;
+  bottom: 20px;
+  right: 15px;
+  width:  50px;
+  height:  50px;
+  box-shadow: 0px 0px 11px 0px #000000;
+  background-color: #fffc;
+  border-radius: 25px;
+  box-sizing:  border-box;
+  z-index: 1;
+  transition: 0.17s ease-in-out;
 }
+.call-button:hover{
+  box-shadow: 0px 0px 4px 0px #000000
+}
+.call-button a{
+  position: relative;
+  top: 15px;
+}
+
+
 footer{
   position: relative;
   top: 38px;
   height: 70px;
   background-color: rgb(177, 177, 177);
+}
+.contact{
+  display: flex;
+  justify-content: center;
+
+}
+.contact a{
+  margin-right: 15px;
+}
+.developed-by{
+  position: relative;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  bottom: 3px;
 }
 
 
@@ -235,6 +278,21 @@ footer{
   }
   .sliderContainer img{
     width: 375px;
+  }
+  .form{
+    height: 222px;
+  }
+  .myform{
+  justify-content: space-between;
+  }
+  .myform p{
+    width: 178px;
+  }
+  .myform p input{
+    width: 170px;
+  }
+  .myform p select{
+    width: 170px;
   }
 }
 
@@ -260,6 +318,9 @@ footer{
   .form{
    height: 230px;
  }
+ .myform{
+   max-width: 710px;
+ }
 }
 
 
@@ -272,6 +333,9 @@ footer{
     width: 349px;
     height: 176px;
     top: 48px;
+  }
+  .price{
+    left: 380px;
   }
 }
 
@@ -335,6 +399,23 @@ footer{
     border-left: 4px solid hsla(0, 0%, 53%, 0.18823529411764706);
     padding-left: 10px;
   }
+  .price{
+    left: 415px;
+  }
+  .form{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+  }
+  .myform p{
+    width: 200px;
+  }
+  .myform p input{
+    width: 200px;
+  }
+  .myform p select{
+    width: 200px;
+  }
 }
 
 
@@ -372,6 +453,21 @@ footer{
   .apartmentTitle{
     padding-top: 30px;
   }
+  .price{
+    left: 515px;
+  }
+  .myform{
+    max-width: 1000px;
+  }
+  .myform p{
+    width: 300px;
+  }
+  .myform p input{
+    width: 300px;
+  }
+  .myform p select{
+    width: 300px;
+  }
 }
 
 /*--------1200--------*/
@@ -388,5 +484,8 @@ footer{
   }
   .sliderContainer img{
     width: 1200px;
+  }
+  .price{
+    left: 730px;
   }
 }
