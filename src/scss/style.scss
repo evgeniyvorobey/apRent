@@ -124,6 +124,9 @@ img{
   bottom: 10px;
   left: 15px;
 }
+.wrapper :nth-child(3){
+  padding-bottom: 0px;
+}
 .apartment-info{
   padding: 5px 10px;
 }
